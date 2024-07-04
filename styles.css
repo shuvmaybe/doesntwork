@@ -1,29 +1,32 @@
+/* Import fonts */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
+/* Base styles */
 body {
   background-color: #161616; /* Dark background for the whole site */
   color: white; /* Default text color */
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Font family for all text */
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat as primary font */
   margin: 0; /* Remove default margin */
   display: flex;
   justify-content: center; /* Center content horizontally */
   align-items: center; /* Center content vertically */
   min-height: 100vh; /* Full viewport height */
+  font-size: 16px; /* Base font size */
 }
 
 .prefix-img {
-    vertical-align: middle; /* Align the image vertically centered with text */
-    margin-right: 10px; /* Adjust margin-right to create space between image and text */
-    width: 70px;
+  vertical-align: middle; /* Align the image vertically centered with text */
+  margin-right: 10px; /* Adjust margin-right to create space between image and text */
+  width: 70px;
 }
 
 x {
-    font-style: italic;
-    color: rgb(255, 98, 98);
+  font-style: italic;
+  color: rgb(255, 98, 98);
 }
 
-
+/* Main container */
 .main {
   background-color: #242424; /* Lighter grey for the main content */
   padding: 20px; /* Padding inside the main content */
@@ -31,31 +34,30 @@ x {
   display: flex; /* Use flexbox for layout */
   flex-direction: column; /* Stack children vertically */
   align-items: center; /* Center items horizontally */
-  max-width: 800px; /* Limit maximum width of .main */
-  width: 35%; /* Ensure .main stretches to full width */
+  width: 35%; /* Initial width for larger screens */
   min-height: 100vh; /* Ensure .main covers at least the viewport height */
+  max-width: 800px; /* Limit maximum width of .main */
 }
 
+/* Subtitle */
 .sub {
-    font-size: x-large;
+  font-size: 1.5rem; /* Responsive font size */
 }
 
+/* Content width */
 .content {
   width: 100%; /* Ensure content stretches to full width */
   max-width: 600px; /* Limit maximum width of content */
   text-align: left; /* Align text to the left */
 }
 
+/* Code block */
 .code {
   background-color: #161616; /* Dark background for the code block */
   font-family: "Inconsolata", monospace; /* Monospaced font for code */
-  font-optical-sizing: auto;
-  font-weight: normal;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
   padding: 10px; /* Padding inside the code block */
   margin-bottom: 10px; /* Add some bottom margin for spacing */
-  width: auto; /* Ensure code block stretches to full width */
+  width: 95%; /* Ensure code block stretches to full width */
 }
 
 .time {
@@ -63,37 +65,37 @@ x {
   margin-right: 10px; /* Add margin to separate time from name */
 }
 
-.nameJoe {
-  color: rgb(97, 97, 255); /* Blue color for the name */
+.name {
   margin-right: 10px; /* Add margin to separate name from message */
+}
+
+.nameJoe {
+  color: rgb(97, 97, 255); /* Blue color for Joe's name */
 }
 
 .nameDonald {
-  color: rgb(157, 255, 138); /* Blue color for the name */
-  margin-right: 10px; /* Add margin to separate name from message */
-}
-
-.message {
-  color: white; /* White color for the message */
+  color: rgb(157, 255, 138); /* Green color for Donald's name */
 }
 
 .nameObama {
-      color: rgb(255, 138, 138); /* Blue color for the name */
-  margin-right: 10px; /* Add margin to separate name from message */
-}
-
-h1, p {
-  max-width: 600px; /* Limit maximum width of headings and paragraphs */
-  margin-bottom: 20px; /* Add some bottom margin for spacing */
+  color: rgb(255, 138, 138); /* Red color for Obama's name */
 }
 
 h1 {
-    font-size: 50px;
+  font-size: 3rem; /* Responsive font size */
+  margin-bottom: 20px; /* Add some bottom margin for spacing */
+}
+
+/* Paragraphs */
+p {
+  max-width: 100%; /* Limit maximum width of paragraphs */
+  margin-bottom: 20px; /* Add some bottom margin for spacing */
+  font-size: 1rem; /* Responsive font size */
 }
 
 .small {
-    font-size: smaller;
-    color: gray;
+  font-size: smaller;
+  color: gray;
 }
 
 em {
@@ -116,4 +118,32 @@ a:hover {
 
 a:active {
   color: rgb(43, 43, 255); /* Selected link */
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+  .main {
+    width: 80%; /* Adjust width for smaller screens */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  h1 {
+    font-size: 2.5rem; /* Adjust heading font size for smaller screens */
+  }
+
+  .sub {
+    font-size: 1.2rem; /* Adjust subtitle font size for smaller screens */
+  }
+
+  .content {
+    padding: 0 10px; /* Adjust content padding for smaller screens */
+  }
+
+  p {
+    font-size: 0.9rem; /* Adjust paragraph font size for smaller screens */
+  }
+
+  .code {
+    font-size: 0.8rem; /* Adjust code font size for smaller screens */
+  }
 }
