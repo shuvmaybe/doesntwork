@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+body {
+  background-color: #161616; /* Dark background for the whole site */
+  color: white; /* Default text color */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Font family for all text */
+  margin: 0; /* Remove default margin */
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  min-height: 100vh; /* Full viewport height */
+}
+
+.prefix-img {
+    vertical-align: middle; /* Align the image vertically centered with text */
+    margin-right: 10px; /* Adjust margin-right to create space between image and text */
+    width: 70px;
+}
+
+x {
+    font-style: italic;
+    color: rgb(255, 98, 98);
+}
+
+
+.main {
+  background-color: #242424; /* Lighter grey for the main content */
+  padding: 20px; /* Padding inside the main content */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for visual effect */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center items horizontally */
+  max-width: 800px; /* Limit maximum width of .main */
+  width: 35%; /* Ensure .main stretches to full width */
+  min-height: 100vh; /* Ensure .main covers at least the viewport height */
+}
+
+.sub {
+    font-size: x-large;
+}
+
+.content {
+  width: 100%; /* Ensure content stretches to full width */
+  max-width: 600px; /* Limit maximum width of content */
+  text-align: left; /* Align text to the left */
+}
+
+.code {
+  background-color: #161616; /* Dark background for the code block */
+  font-family: "Inconsolata", monospace; /* Monospaced font for code */
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  padding: 10px; /* Padding inside the code block */
+  margin-bottom: 10px; /* Add some bottom margin for spacing */
+  width: auto; /* Ensure code block stretches to full width */
+}
+
+.time {
+  color: gray; /* Gray color for the time */
+  margin-right: 10px; /* Add margin to separate time from name */
+}
+
+.nameJoe {
+  color: rgb(97, 97, 255); /* Blue color for the name */
+  margin-right: 10px; /* Add margin to separate name from message */
+}
+
+.nameDonald {
+  color: rgb(157, 255, 138); /* Blue color for the name */
+  margin-right: 10px; /* Add margin to separate name from message */
+}
+
+.message {
+  color: white; /* White color for the message */
+}
+
+.nameObama {
+      color: rgb(255, 138, 138); /* Blue color for the name */
+  margin-right: 10px; /* Add margin to separate name from message */
+}
+
+h1, p {
+  max-width: 600px; /* Limit maximum width of headings and paragraphs */
+  margin-bottom: 20px; /* Add some bottom margin for spacing */
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.small {
+    font-size: smaller;
+    color: gray;
+}
+
+em {
+  font-style: italic;
+  font-size: large;
+  font-weight: 500;
+}
+
+a {
+  color: rgb(140, 140, 255); /* Unvisited link */
+}
+
+a:visited {
+  color: rgb(204, 204, 204); /* Visited link */
+}
+
+a:hover {
+  color: rgb(74, 74, 255); /* Mouse over link */
+}
+
+a:active {
+  color: rgb(43, 43, 255); /* Selected link */
+}
