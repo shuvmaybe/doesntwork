@@ -93,7 +93,14 @@
                 <span class="time">[solution]</span>
                 <br>
                 <span class="time">[10:33 AM]</span>
-                <span class="nameObama">[Barack Obamna]</span>
+                <script>
+                    function clicked(){
+                        var clicked = document.getElementById("clicked")
+                    clicked.hidden = false;
+                    console.log("clicked!")
+                    }
+                </script>
+                <span class="nameObama" onClick="clicked()">[Barack Obamna]</span>
                 <span class="message"><em>Doesn't work.</em></span>
                 <br>
                 <span class="time">[10:34 AM]</span>
@@ -104,6 +111,12 @@
                 <span class="time">[10:34 AM]</span>
                 <span class="nameObama">[Barack Obama]</span>
                 <span class="message">Now it works! Thanks.</span>
+		<span class="message">
+			<video width="100%" autoplay hidden="true" id="clicked" controls>
+                    		<source src="obamna.mp4" type="video/mp4">
+                	</video>
+		</span>
+                
             </div>
             <p>Here, Obama used "Doesn't work" effectively to quickly resolve his issue, as Donald was already aware of the context from earlier messages.</p>
 			
