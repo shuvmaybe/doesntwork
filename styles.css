@@ -1,23 +1,22 @@
-/* Import fonts */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 
-/* Base styles */
 body {
-  background-color: #161616; /* Dark background for the whole site */
-  color: white; /* Default text color */
-  font-family: 'Montserrat', sans-serif; /* Use Montserrat as primary font */
-  margin: 0; /* Remove default margin */
+  background-color: #161616;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  margin: 0;
   display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  min-height: 100vh; /* Full viewport height */
-  font-size: 16px; /* Base font size */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 16px;
 }
 
 .prefix-img {
-  vertical-align: middle; /* Align the image vertically centered with text */
-  margin-right: 10px; /* Adjust margin-right to create space between image and text */
+  vertical-align: middle;
+  margin-right: 10px;
   width: 70px;
 }
 
@@ -26,71 +25,68 @@ x {
   color: rgb(255, 98, 98);
 }
 
-/* Main container */
+
 .main {
-  background-color: #242424; /* Lighter grey for the main content */
-  padding: 20px; /* Padding inside the main content */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for visual effect */
-  display: flex; /* Use flexbox for layout */
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center items horizontally */
-  width: 35%; /* Initial width for larger screens */
-  min-height: 100vh; /* Ensure .main covers at least the viewport height */
-  max-width: 800px; /* Limit maximum width of .main */
+  background-color: #242424;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  min-height: 100vh;
+  max-width: 800px;
 }
 
-/* Subtitle */
 .sub {
-  font-size: 1.5rem; /* Responsive font size */
+  font-size: 1.5rem;
 }
 
-/* Content width */
 .content {
-  width: 100%; /* Ensure content stretches to full width */
-  max-width: 600px; /* Limit maximum width of content */
-  text-align: left; /* Align text to the left */
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
 }
 
-/* Code block */
 .code {
-  background-color: #161616; /* Dark background for the code block */
-  font-family: "Inconsolata", monospace; /* Monospaced font for code */
-  padding: 10px; /* Padding inside the code block */
-  margin-bottom: 10px; /* Add some bottom margin for spacing */
-  width: 95%; /* Ensure code block stretches to full width */
+  background-color: #161616;
+  font-family: "Inconsolata", monospace;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 95%;
 }
 
 .time {
-  color: gray; /* Gray color for the time */
-  margin-right: 10px; /* Add margin to separate time from name */
+  color: gray;
+  margin-right: 10px;
 }
 
 .name {
-  margin-right: 10px; /* Add margin to separate name from message */
+  margin-right: 10px;
 }
 
 .nameJoe {
-  color: rgb(97, 97, 255); /* Blue color for Joe's name */
+  color: rgb(97, 97, 255);  blue */
 }
 
-.nameDonald {
-  color: rgb(157, 255, 138); /* Green color for Donald's name */
+.nameLincoln {
+  color: rgb(157, 255, 138);  green */
 }
 
 .nameObama {
-  color: rgb(255, 138, 138); /* Red color for Obama's name */
+  color: rgb(255, 138, 138);  pink? */
 }
 
 h1 {
-  font-size: 3rem; /* Responsive font size */
-  margin-bottom: 20px; /* Add some bottom margin for spacing */
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
-/* Paragraphs */
+ Paragraphs */
 p {
-  max-width: 100%; /* Limit maximum width of paragraphs */
-  margin-bottom: 20px; /* Add some bottom margin for spacing */
-  font-size: 1rem; /* Responsive font size */
+  max-width: 100%;
+  margin-bottom: 20px;
+  font-size: 1rem;
 }
 
 .small {
@@ -100,50 +96,48 @@ p {
 
 em {
   font-style: italic;
-  font-size: large;
   font-weight: 500;
 }
 
 a {
-  color: rgb(140, 140, 255); /* Unvisited link */
+  color: rgb(140, 140, 255);
 }
 
 a:visited {
-  color: rgb(204, 204, 204); /* Visited link */
+  color: rgb(204, 204, 204);
 }
 
 a:hover {
-  color: rgb(74, 74, 255); /* Mouse over link */
+  color: rgb(74, 74, 255);
 }
 
 a:active {
-  color: rgb(43, 43, 255); /* Selected link */
+  color: rgb(43, 43, 255);
 }
 
-/* Media queries for responsiveness */
 @media only screen and (max-width: 768px) {
   .main {
-    width: 80%; /* Adjust width for smaller screens */
-    padding: 10px; /* Adjust padding for smaller screens */
+    width: 80%;
+    padding: 10px;
   }
 
   h1 {
-    font-size: 2.5rem; /* Adjust heading font size for smaller screens */
+    font-size: 2.5rem;
   }
 
   .sub {
-    font-size: 1.2rem; /* Adjust subtitle font size for smaller screens */
+    font-size: 1.2rem;
   }
 
   .content {
-    padding: 0 10px; /* Adjust content padding for smaller screens */
+    padding: 0 10px;
   }
 
   p {
-    font-size: 0.9rem; /* Adjust paragraph font size for smaller screens */
+    font-size: 0.9rem;
   }
 
   .code {
-    font-size: 0.8rem; /* Adjust code font size for smaller screens */
+    font-size: 0.8rem;
   }
 }
